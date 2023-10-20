@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Generate chat</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="username" placeholder="Username"/>
+                    <button type="button" onclick="connect();" >Connect</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea readonly="true" rows="10" cols="80" id="log"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" size="51" min="1" max="500" id="count" placeholder="Count"/>
+                    <button type="button" onclick="generate();">Generate</button>
+                </td>
+            </tr>
+        </table>
+    </body>
+    <script src="websocket.js"></script>
+</html>
